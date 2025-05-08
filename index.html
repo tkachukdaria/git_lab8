@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Персональний кулінарний блог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="home-page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <h1 class="site-title">Персональний кулінарний блог</h1>
+    <div class="banner" id="draggable-banner">👩‍🍳 Ласкаво просимо!</div>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#">Головна</a></li>
+      <li class="menu-item"><a href="#">Рецепти</a></li>
+      <li class="menu-item"><a href="#">Поради</a></li>
+      <li class="menu-item"><a href="#">Галерея</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+
+    <!-- ===== LAB6: JS DEMOS ===== -->
+    <section class="demo-block">
+      <h2>JavaScript: alert, prompt, confirm, DOM</h2>
+      <button id="dialogBtn">🗨 Діалог із користувачем</button>
+      <button id="devInfoBtn">👤 Про розробника</button>
+      <button id="compareBtn">🔤 Порівняти рядки</button>
+      <button id="bgChangeBtn">🎨 Змінити фон 30с</button>
+      <button id="redirectBtn">🔗 Перейти на GitHub</button>
+    </section>
+
+    <section class="demo-block">
+      <h2>Вставка/заміна/видалення вузлів</h2>
+      <div id="toInsert">Я зʼявлюсь перед цим текстом.</div>
+      <div id="toRemove">Я буду видалений.</div>
+      <div id="toReplace">Я буду замінений.</div>
+      <button id="domOpsBtn">🔧 Зробити DOM-операції</button>
+    </section>
+
+    <!-- ===== LAB7: EVENTS ===== -->
+    <section class="demo-block">
+      <h2>Обробники подій</h2>
+      <button id="attrBtn" onclick="alert('Клік через атрибут!')">onclick-атрибут</button>
+      <button id="propBtn">Властивість onclick</button>
+      <button id="multiBtn">Декілька addEventListener</button>
+      <button id="removeBtn">Видалити обробник</button>
+    </section>
+
+    <section class="demo-block">
+      <h2>Делегування: підсвічування списку</h2>
+      <ul id="demo-list">
+        <li>Інтегральний торт</li>
+        <li>Ягідний мус</li>
+        <li>Кекс з родзинками</li>
+      </ul>
+    </section>
+
+    <section class="demo-block">
+      <h2>Menu Behavior (data-action)</h2>
+      <div id="behavior-menu">
+        <button data-action="toggleBanner">Переключити банер</button>
+        <button data-action="toggleContent">Переключити контент</button>
+      </div>
+    </section>
+
+    <!-- ===== LAB8: MOUSE EVENTS ===== -->
+    <section class="demo-block">
+      <h2>Hover-ефекти та перетягування</h2>
+      <p>Наведіть мишку на пункти меню чи список зверху, щоб побачити підсвічування.</p>
+      <p>А банер зверху можна перетягнути за допомогою миші.</p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> Tkachuk Daria</p>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
